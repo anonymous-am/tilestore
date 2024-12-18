@@ -129,7 +129,7 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT'),
     }
 }
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS','tilestore.onrender.com', 'localhost').split(',')
 
 
 # Password validation
