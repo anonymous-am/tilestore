@@ -1,0 +1,5 @@
+# Ignore the .env file (stores sensitive data like SECRET_KEY, DATABASE_URL)
+.env
+
+# Ignore the venv directory (stores virtual environment)
+venv/

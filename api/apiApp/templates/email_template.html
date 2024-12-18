@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Order Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .order-details {
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>New Order Received</h2>
+    <p>Hello Admin,</p>
+    <p>A new order has been received. Here are the order details:</p>
+    
+    <div class="order-details">
+      <h3>Order Details:</h3>
+      <p><strong>Order Date: </strong> {{order_date}}</p>
+      <p><strong>Order ID: </strong> {{order_id}}</p>
+      <p><strong>Product ID: </strong>{{product_id}}</p>
+      {% comment %} <p><strong>Product:</strong> [Product Name]</p> {% endcomment %}
+      <p><strong>Quantity: </strong>{{quantity}}</p>
+      <p><strong>Total Amount: </strong>{{price}}</p>
+      <p><strong>Customer Name: </strong>{{merchant_name}}</p>
+      <p><strong>Customer Mobile No: </strong>{{merchant_mobile_no}}</p>
+      <p><strong>Seller ID: </strong>{{seller_id}}</p>
+    </div>
+
+    <p>Please take the necessary actions to process the order.</p>
+
+  </div>
+</body>
+</html>
