@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Secret key and other credentials
 # SECRET_KEY = env('SECRET_KEY')
-# SMTP_USERNAME = env('SMTP_USERNAME')
-# SMTP_PASSWORD = env('SMTP_PASSWORD')
-# FROM_EMAIL = env('FROM_EMAIL')
+SMTP_USERNAME = os.getenv('SMTP_USERNAME')
+SMTP_PASSWORD = os.getenv('SMTP_PASSWORD')
+FROM_EMAIL = os.getenv('FROM_EMAIL')
 
 # print("Loaded SECRET_KEY:", env('SMTP_USERNAME'))
 
